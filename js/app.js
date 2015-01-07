@@ -56,6 +56,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.favorites', {
+      url: "/favorites",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/favorites.html",
+          controller: 'FavoritesCtrl'
+        }
+      }
+    })
 
   .state('app.single', {
     url: "/playlists/:playlistId",
